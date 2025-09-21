@@ -1,79 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KakaoTalk Login</title>
-    <link rel="stylesheet" href="index_styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
   </head>
   <body>
-    <div class="mobile-screen">
-      <!-- Status Bar -->
-      <div class="status-bar">
-        <div class="status-bar__left">
-          <span class="status-bar__carrier">No Service</span>
-          <i class="fas fa-wifi status-bar__wifi"></i>
-        </div>
-        <div class="status-bar__center">
-          <span class="status-bar__time">18:43</span>
-        </div>
-        <div class="status-bar__right">
-          <i class="fas fa-lock status-bar__lock"></i>
-          <span class="status-bar__battery">11%</span>
-          <div class="status-bar__battery-icon">
-            <div class="status-bar__battery-level"></div>
-          </div>
-          <i class="fas fa-bolt status-bar__charging"></i>
-        </div>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
       </div>
-
-      <!-- Main Content -->
-      <div class="login-container">
-        <!-- Header -->
-        <header class="login-header">
-          <h1 class="login-header__title">Welcome to KakaoTalk</h1>
-          <p class="login-header__subtitle">
-            If you have a Kakao Account,<br />
-            log in with your email or phone number.
-          </p>
-        </header>
-
-        <!-- Login Form -->
-        <form class="login-form">
-          <div class="input-group">
-            <input
-              type="text"
-              class="input-field"
-              placeholder="Email or phone number"
-              id="email-phone"
-            />
-          </div>
-
-          <div class="input-group">
-            <input
-              type="password"
-              class="input-field"
-              placeholder="Password"
-              id="password"
-            />
-          </div>
-
-          <button type="submit" class="btn btn--login">Log In</button>
-
-          <button type="button" class="btn btn--signup">Sign Up</button>
-        </form>
-
-        <!-- Footer -->
-        <footer class="login-footer">
-          <a href="#" class="login-footer__link"
-            >Find Kakao Account or Password</a
-          >
-        </footer>
+      <div class="status-bar__column">
+        <span>18:43</span>
       </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
+      <p class="welcome-header__text">
+        If you have a Kakao Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
     </div>
   </body>
 </html>
