@@ -1,3 +1,3 @@
 # Kokoa Clone 2025 Challenge
 
-CSS got so much better!
+HTML & CSS got so much fun!
